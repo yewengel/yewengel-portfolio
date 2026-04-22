@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume - Yewengel Mesele</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .cv-container { max-width: 900px; margin: 0 auto; padding: 4rem 3rem; background: var(--card-bg); border: 1px solid var(--border-color); border-radius: 1rem; box-shadow: var(--glass-shadow); backdrop-filter: blur(20px); }
+        .cv-header { text-align: center; border-bottom: 2px solid rgba(236, 72, 153, 0.3); padding-bottom: 1.5rem; margin-bottom: 2.5rem; }
+        .cv-header h1 { font-size: 2.5rem; margin-bottom: 0.5rem; color: var(--text-color); }
+        .cv-contact { color: var(--muted); display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem; font-size: 1.05rem; }
+        .cv-contact a { color: var(--muted); text-decoration: none; transition: color 0.3s ease; }
+        .cv-contact a:hover { color: var(--primary); }
+        
+        .cv-section { margin-bottom: 2.5rem; }
+        .cv-section h2 { font-size: 1.4rem; color: var(--primary); border-bottom: 1px solid var(--border-color); padding-bottom: 0.5rem; margin-bottom: 1.5rem; text-transform: uppercase; letter-spacing: 1px; }
+        
+        .cv-item { margin-bottom: 1.5rem; }
+        .cv-item h3 { font-size: 1.25rem; margin-bottom: 0.25rem; color: var(--text-color); display: flex; justify-content: space-between; flex-wrap: wrap; align-items: center; }
+        .cv-item h3 span { font-size: 1rem; color: var(--muted); font-weight: normal; }
+        .cv-item p { color: var(--muted); font-size: 1.05rem; line-height: 1.7; margin-bottom: 0.5rem; }
+        .cv-item a { color: var(--blue); text-decoration: none; }
+        .cv-item a:hover { text-decoration: underline; color: var(--primary); }
+        
+        .skills-group { margin-bottom: 1rem; display: flex; flex-direction: column; gap: 0.5rem; }
+        .skills-group strong { color: var(--text-color); font-weight: 600; }
+        .skills-list { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+        .skills-list span { background: rgba(255, 255, 255, 0.05); border: 1px solid var(--border-color); padding: 0.25rem 0.8rem; border-radius: 999px; font-size: 0.9rem; color: var(--muted); }
+        
+        .coursework-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 0.5rem; color: var(--muted); }
+        .coursework-list li { list-style-type: disc; margin-left: 1.5rem; }
+
+        .print-btn { text-align: center; margin-bottom: 2rem; }
+
+        @media print {
+            body { background: #fff !important; color: #000 !important; }
+            .navbar, .theme-toggle, .mobile-menu-btn, footer, .ambient-bg, .print-btn { display: none !important; }
+            .cv-container { box-shadow: none !important; border: none !important; padding: 0 !important; max-width: 100% !important; background: none !important; margin: 0 !important; }
+            .cv-header h1 { color: #000 !important; }
+            .cv-section h2 { color: #000 !important; border-bottom-color: #ccc !important; }
+            .cv-item h3, .skills-group strong { color: #000 !important; }
+            .cv-item p, .cv-contact, .skills-list span, .coursework-list { color: #333 !important; }
+            .skills-list span { border-color: #ccc !important; }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="nav-brand">Yewengel</a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="skills.html">Skills</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div style="display: flex; gap: 1rem; align-items: center;">
+            <button class="theme-toggle" aria-label="Toggle theme">
+                <svg class="sun-icon" style="display: none;" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+                <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+            </button>
+            <button class="mobile-menu-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+            </button>
+        </div>
+    </nav>
+
+    <main style="padding-top: 120px; padding-bottom: 4rem;">
+        <div class="container" style="padding-top: 0;">
+            <div class="print-btn reveal">
+                <button onclick="window.print()" class="btn btn-primary">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect width="12" height="8" x="6" y="14"/></svg>
+                    Print / Save as PDF
+                </button>
+            </div>
+            
+            <div class="cv-container reveal delay-100">
+                <div class="cv-header">
+                    <h1>YEWENGEL MESELE GETACHEW</h1>
+                    <div class="cv-contact">
+                        <span>Addis Ababa, Ethiopia</span> • 
+                        <span><a href="tel:+251995526691">+251995526691</a></span> • 
+                        <span><a href="mailto:yewengelmesele@gmail.com">yewengelmesele@gmail.com</a></span> • 
+                        <span>GitHub: <a href="https://github.com/yewengel" target="_blank">github.com/yewengel</a></span>
+                    </div>
+                </div>
+
+                <div class="cv-section">
+                    <h2>Summary</h2>
+                    <p style="color: var(--muted); font-size: 1.05rem; line-height: 1.7;">
+                        Motivated third-year Software Engineering student at Adama Science and Technology University with a strong academic foundation in software development, system design, and problem solving. Experienced in university-based projects involving Java, Python, C++, databases, networking, and client–server systems. Known for strong documentation skills, attention to detail, and the ability to learn quickly in technical environments. Seeking an internship opportunity with the intention to grow into a long-term role by contributing energy, commitment, and continuous improvement to the organization.
+                    </p>
+                </div>
+
+                <div class="cv-section">
+                    <h2>Projects</h2>
+                    <div class="cv-item">
+                        <h3>Chat Application (Client–Server) <span><a href="https://github.com/yewengel/Chat-app" target="_blank">github.com/yewengel/Chat-app</a></span></h3>
+                        <p>Developed a client–server chat application using socket programming. Implemented multithreading to support multiple users simultaneously and enabled real-time notifications when users join or leave the chat.</p>
+                    </div>
+                    <div class="cv-item">
+                        <h3>Student Portal <span><a href="https://github.com/yewengel/student-portal" target="_blank">github.com/yewengel/student-portal</a></span></h3>
+                        <p>Built a system to register students and store records in a database, implementing CRUD operations and focusing on proper data organization and consistency.</p>
+                    </div>
+                    <div class="cv-item" style="margin-top: 1.5rem;">
+                        <p>For additional projects and source code, please visit my GitHub profile:<br>
+                        <a href="https://github.com/yewengel" target="_blank">https://github.com/yewengel</a></p>
+                    </div>
+                </div>
+
+                <div class="cv-section">
+                    <h2>Education</h2>
+                    <div class="cv-item">
+                        <h3>BSc in Software Engineering <span>2024 – 2028 (Expected)</span></h3>
+                        <p>Adama Science and Technology University (ASTU)</p>
+                    </div>
+                </div>
+
+                <div class="cv-section">
+                    <h2>Relevant Coursework</h2>
+                    <ul class="coursework-list">
+                        <li>Introduction to Computing (Python)</li>
+                        <li>Fundamentals of Programming (C++)</li>
+                        <li>Data Structures & Algorithms</li>
+                        <li>Object-Oriented Programming</li>
+                        <li>Fundamentals of Software Engineering</li>
+                        <li>Database Systems</li>
+                        <li>Programming under Unix/Linux</li>
+                        <li>Software Requirements Engineering</li>
+                        <li>Advanced Programming</li>
+                        <li>Data Communication & Computer Networks</li>
+                        <li>Software Architecture and Design</li>
+                        <li>Engineering Web-Based Systems</li>
+                        <li>Mobile Application Design and Development</li>
+                        <li>Operating Systems</li>
+                        <li>Information Storage and Retrieval</li>
+                    </ul>
+                </div>
+
+                <div class="cv-section">
+                    <h2>Technical Skills</h2>
+                    <div class="skills-group">
+                        <strong>Programming Languages:</strong>
+                        <div class="skills-list">
+                            <span>Java</span><span>Python</span><span>C++</span><span>JavaScript</span>
+                        </div>
+                    </div>
+                    <div class="skills-group">
+                        <strong>Web Technologies:</strong>
+                        <div class="skills-list">
+                            <span>HTML</span><span>CSS</span><span>Web-Based System Fundamentals</span>
+                        </div>
+                    </div>
+                    <div class="skills-group">
+                        <strong>Databases:</strong>
+                        <div class="skills-list">
+                            <span>Relational Databases</span><span>SQL Fundamentals</span>
+                        </div>
+                    </div>
+                    <div class="skills-group">
+                        <strong>Tools:</strong>
+                        <div class="skills-list">
+                            <span>Git</span><span>GitHub</span><span>VS Code</span><span>IntelliJ IDEA</span><span>Linux/Unix Command Line</span>
+                        </div>
+                    </div>
+                    <div class="skills-group">
+                        <strong>Other Skills:</strong>
+                        <div class="skills-list">
+                            <span>Software Documentation</span><span>Debugging</span><span>Problem Solving</span><span>SDLC Understanding</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cv-section" style="margin-bottom: 0;">
+                    <h2>Additional Information</h2>
+                    <div class="cv-item">
+                        <p><strong style="color: var(--text-color);">Practical and Academic Experience:</strong> Completed multiple hands-on university labs and semester projects in programming, databases, networking, operating systems, and software engineering, applying theoretical concepts to practical scenarios with proper technical documentation.</p>
+                    </div>
+                    <div class="cv-item" style="margin-bottom: 0;">
+                        <p><strong style="color: var(--text-color);">Career Objective:</strong> Seeking a software engineering internship with the opportunity to continue as a long-term team member. Highly motivated to contribute strong work ethic, adaptability, and continuous technical growth while supporting the organization’s software development goals.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 Yewengel Mesele. Crafted with passion and precision.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

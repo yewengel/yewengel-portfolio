@@ -1,0 +1,53 @@
+YEWENGEL MESELE GETACHEW
+Addis Ababa, Ethiopia • +251995526691 • yewengelmesele@gmail.com
+
+GitHub: https://github.com/yewengel
+
+SUMMARY
+Motivated third-year Software Engineering student at Adama Science and Technology University with a strong academic foundation in software development, system design, and problem solving. Experienced in university-based projects involving Java, Python, C++, databases, networking, and client–server systems. Known for strong documentation skills, attention to detail, and the ability to learn quickly in technical environments. Seeking an internship opportunity with the intention to grow into a long-term role by contributing energy, commitment, and continuous improvement to the organization.
+
+PROJECTS
+
+Chat Application (Client–Server)
+https://github.com/yewengel/Chat-app
+Developed a client–server chat application using socket programming. Implemented multithreading to support multiple users simultaneously and enabled real-time notifications when users join or leave the chat.
+
+Student Portal
+https://github.com/yewengel/student-portal
+Built a system to register students and store records in a database, implementing CRUD operations and focusing on proper data organization and consistency.
+
+For additional projects and source code, please visit my GitHub profile:
+https://github.com/yewengel
+
+EDUCATION
+BSc in Software Engineering
+Adama Science and Technology University (ASTU)
+2024 – 2028 (Expected)
+
+RELEVANT COURSEWORK
+Introduction to Computing (Python)
+Fundamentals of Programming (C++)
+Data Structures & Algorithms
+Object-Oriented Programming
+Fundamentals of Software Engineering
+Database Systems
+Programming under Unix/Linux
+Software Requirements Engineering
+Advanced Programming
+Data Communication & Computer Networks
+Software Architecture and Design
+Engineering Web-Based Systems
+Mobile Application Design and Development
+Operating Systems
+Information Storage and Retrieval
+
+TECHNICAL SKILLS
+Programming Languages: Java, Python, C++, JavaScript
+Web Technologies: HTML, CSS, Web-Based System Fundamentals
+Databases: Relational Databases, SQL Fundamentals
+Tools: Git, GitHub, VS Code, IntelliJ IDEA, Linux/Unix Command Line
+Other Skills: Software Documentation, Debugging, Problem Solving, SDLC Understanding
+
+ADDITIONAL INFORMATION
+Practical and Academic Experience: Completed multiple hands-on university labs and semester projects in programming, databases, networking, operating systems, and software engineering, applying theoretical concepts to practical scenarios with proper technical documentation.
+Career Objective: Seeking a software engineering internship with the opportunity to continue as a long-term team member. Highly motivated to contribute strong work ethic, adaptability, and continuous technical growth while supporting the organization’s software development goals.
